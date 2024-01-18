@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPOOKY SCRABBLE</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- script -->
+  <script src="wordlist.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="main">
+    <div id="startModal" class="modal">
+      <div class="modal-content">
+        <button id="startButton">Start Game</button>
+      </div>
+    </div>
+    <div class="game">
+      <div class="left">
+        <img class="img" src="images/hangman-0.svg" />
+        <h1>SPOOKY SCRABBLE</h1>
+      </div>
+      <div class="right">
+        <ul class="word-display"></ul>
+        <h4>
+          Hint:Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Laborum, ipsum!
+        </h4>
+        <p>
+          Incorrect guessess:
+          <span class="chance" style="color: red">0/6</span>
+        </p>
+        <div class="keyboard"></div>
+      </div>
+    </div>
+    <div class="GameOver">
+      <img class="gameoverImg" src="images/lost.gif" />
+      <h3>Game Over!</h3>
+      <p class="score">Score: 0</p>
+      <h6>
+        The Correct Word Was:<span class="answer" style="color: red">Jazz</span>
+      </h6>
+      <button onclick="location.reload()">PLAY AGAIN</button>
+    </div>
+
+    </div>
+  <audio id="gameOverAudio" src="audio/river.mp3"></audio>
+    <!-- "Victory" audio -->
+    <audio id="victoryAudio" src="audio/victory.mp3"></audio>
+
+</body>
+
+</html>
